@@ -1,0 +1,19 @@
+<div *ngIf="displayForm">
+    <h2>Please enter the following values:</h2>
+
+    <div>
+      <label for="penName">Your pseudonym:</label>
+      <input [(ngModel)]="madLib.penName" id="penName" />  
+    </div>
+    
+    <div *ngFor="let r of madLib.replacements">
+      <label for="{{ r.placeholder }}">{{ r.description }}:</label>
+      <input [(ngModel)]="r.replacement" id="{{ r.placeholder }}" />  
+    </div>
+    
+    <div>
+      <button (click)="buildMadLib()">View Mad Lib</button>
+    </div>
+</div>
+
+<app-display-mad-lib [madLib]="madLib" *ngIf="displayMadLib"></app-display-mad-lib>

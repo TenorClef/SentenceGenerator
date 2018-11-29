@@ -1,0 +1,17 @@
+
+<h2>Your random adverb is:</h2>
+<div>
+    <span *ngIf="adverb">{{ adverb }}</span>&nbsp;
+</div>
+<div>
+  <button (click)="getRandomAdverb()">Get random adverb</button>
+</div>
+
+<h3>Add new adverb</h3>
+<div>
+  <label for="newAdjective">New adverb:</label>
+  <input [(ngModel)]="newAdverb" id="newAdverb" />
+</div>
+<div>
+  <button (click)="addAdverb()">Add adverb</button>
+</div>

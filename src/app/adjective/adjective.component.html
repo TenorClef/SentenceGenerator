@@ -1,0 +1,16 @@
+<h2>Your random adjective is:</h2>
+<div>
+    <span *ngIf="adjective">{{ adjective }}</span>&nbsp;
+</div>
+<div>
+  <button (click)="getRandomAdjective()">Get random adjective</button>
+</div>
+
+<h3>Add new adjective</h3>
+<div>
+  <label for="newAdjective">New adjective:</label>
+  <input [(ngModel)]="newAdjective" id="newAdjective" />
+</div>
+<div>
+  <button (click)="addAdjective()">Add adjective</button>
+</div>

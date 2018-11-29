@@ -1,0 +1,40 @@
+<h2>Your random verb is:</h2>
+<div>
+    <span *ngIf="randomVerb">{{ randomVerb.present1 }}</span>&nbsp;
+</div>
+<div>
+  <button (click)="getRandomVerb()">Get random verb</button>
+</div>
+
+<h3>Add new verb</h3>
+<div>
+  <label for="present1">Present:</label>
+  <input [(ngModel)]="newVerb.present1" id="present1" />
+</div>
+<div>
+  <label for="present3">Present third person:</label>
+  <input [(ngModel)]="newVerb.present3" id="present3" />
+</div>
+<div>
+  <label for="past">Past:</label>
+  <input [(ngModel)]="newVerb.past" id="past" />
+</div>
+<div>
+  <label for="future">Future:</label>
+  <input [(ngModel)]="newVerb.future" id="future" />
+</div>
+<div>
+  <label for="participle">Participle:</label>
+  <input [(ngModel)]="newVerb.participle" id="participle" />
+</div>
+<div>
+  <label for="pastParticiple">Past participle:</label>
+  <input [(ngModel)]="newVerb.pastParticiple" id="pastParticiple" />
+</div>
+<div>
+  <label for="isTransitive">Transitive:</label>
+  <input [(ngModel)]="newVerb.isTransitive" id="isTransitive" type="checkbox" class="checkbox" />
+</div>
+<div>
+  <button (click)="addVerb()">Add verb</button>
+</div>

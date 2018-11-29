@@ -1,0 +1,29 @@
+
+<nav>
+  <ul class="navbar">
+      <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/sentenceGenerator']">Sentence generator</a>
+        </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/nouns']">Nouns</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/verbs']">Verbs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/adjectives']">Adjectives</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/adverbs']">Adverbs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/madLibPrepare']">Play Mad Lib!</a>
+    </li>
+  </ul>
+</nav>
+
+<div style="text-align:center">
+
+<router-outlet></router-outlet>
+
+</div>

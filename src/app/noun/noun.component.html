@@ -1,0 +1,23 @@
+
+<h2>Your random noun is:</h2>
+<div>
+        <span *ngIf="randomNoun">{{ randomNoun.singular }}</span>&nbsp;
+</div>
+<div>
+    <button (click)="getRandomNoun()">Get random noun</button>
+  </div>
+
+<h3>Add new noun</h3>
+<div *ngIf="newNoun">
+    <div>
+        <label>Singular:</label>
+        <input [(ngModel)]="newNoun.singular" id="nsingular" />
+    </div>
+    <div>
+        <label for="nplural">Plural:</label>
+        <input [(ngModel)]="newNoun.plural" id="nplural" />
+    </div>
+    <div>
+      <button (click)="saveNoun()">Add noun</button>
+    </div>
+</div>
