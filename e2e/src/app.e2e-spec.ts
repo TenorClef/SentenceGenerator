@@ -7,8 +7,8 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display heading', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to SentenceGenerator!');
+    expect(page.getHeading()).toEqual('Your generated sentence is:');
   });
 });

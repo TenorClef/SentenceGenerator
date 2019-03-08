@@ -1,4 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { VerbComponent } from './verb.component';
 
@@ -8,6 +10,7 @@ describe('VerbComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ FormsModule, HttpClientModule ],
       declarations: [ VerbComponent ]
     })
     .compileComponents();

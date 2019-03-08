@@ -178,5 +178,36 @@ const MadLibs: MadLib[] = [
       { placeholder: '<var19>', description: 'A member of a nationality or ethnic group (e.g. "Canadian")', replacement: '' },
       { placeholder: '<var20>', description: 'An abstract noun', replacement: '' }
     ]
+  },
+  {
+    originalTitle: 'Charles I',
+    originalAuthor: 'Wikipedia',
+    penName: '',
+    fullText: `A <var1> conceived and executed naval expedition against <var2> under the leadership of <var3> went badly, 
+      and the House of Commons began proceedings for the impeachment of the duke. In May 1626, Charles nominated <var3> 
+      as <var4> of Cambridge University in a show of <var5>, and had two members who had spoken against 
+      <var3> – Dudley Digges and Sir John Eliot – <var6> at the door of the House. The Commons was outraged by the 
+      imprisonment of two of their <var7>, and after about a week in custody, both were released. On 12 June 1626, the 
+      Commons launched a direct protestation attacking <var3>, stating, "We <var8> before your Majesty and the whole world 
+      that until this <var9> <var10> be removed from <var11> with the great affairs of state, we are out of hope of any good 
+      success; and do fear that any money we shall or can <var12> will, through his misemployment, be turned rather to the hurt and 
+      prejudice of this your kingdom than otherwise, as by <var13> experience we have found those large supplies formerly and 
+      lately given." Despite Parliament's protests, however, Charles refused to dismiss his <var14>, dismissing Parliament instead.`,
+    replacements: [
+      { placeholder: '<var1>', description: 'An adverb', replacement: '' },
+      { placeholder: '<var2>', description: 'A country, city, or place', replacement: '' },
+      { placeholder: '<var3>', description: 'A proper name', replacement: '' },
+      { placeholder: '<var4>', description: 'A position or job title', replacement: '' },
+      { placeholder: '<var5>', description: 'An abstract noun', replacement: '' },
+      { placeholder: '<var6>', description: 'A verb (past participle', replacement: '' },
+      { placeholder: '<var7>', description: 'A noun (plural)', replacement: '' },
+      { placeholder: '<var8>', description: 'A verb', replacement: '' },
+      { placeholder: '<var9>', description: 'An adjective', replacement: '' },
+      { placeholder: '<var10>', description: 'A noun', replacement: '' },
+      { placeholder: '<var11>', description: 'A verb (present participle)', replacement: '' },
+      { placeholder: '<var12>', description: 'A verb', replacement: '' },
+      { placeholder: '<var13>', description: 'An adjective', replacement: '' },
+      { placeholder: '<var14>', description: 'A noun', replacement: '' }
+    ]
   }
 ];
